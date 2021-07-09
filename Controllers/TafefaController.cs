@@ -1,11 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
+using TarefasBackEnd.Models;
+using TarefasBackEnd.Repositories;
 
 namespace TarefasBackEnd.Controllers
 {
     [ApiController]
     [Route("tarefa")]    
     public class TarefaController : ControllerBase{
-        public IActionResult Get(){
+
+        [HttpGet]
+        public IActionResult Read([FromServices]ITarefaRepository repository){
+
+            var tarefas = repository.Read();
+            return Ok(tarefas);
+        }
+
+        [HttpPost]
+        public IActionResult Create([FromBody]Tarefa model, [FromServices]ITarefaRepository repository){
+            if(!ModelState.IsValid)
+                return BadRequest();
+
+            repository.Create(model);
+
+        
             return Ok();
         }
     }
