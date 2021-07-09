@@ -2,7 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TarefasBackEnd.Controllers
 {
-    public class TarefaController : Controllers{
-
+    [ApiController]
+    [Route("tarefa")]    
+    public class TarefaController : ControllerBase{
+        public IActionResult Get(){
+            return Ok();
+        }
     }
 }
