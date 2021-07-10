@@ -23,6 +23,7 @@ namespace TarefasBackEnd
             services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("BDTarefas"));
 
             services.AddTransient<ITarefaRepository, TarefaRepository>();
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

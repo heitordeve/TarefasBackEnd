@@ -40,7 +40,7 @@ namespace TarefasBackEnd.Repositories
         public List<Tarefa> Read()
         {
             return _context.Tarefas.ToList();
-        }
+        } 
 
         public void Update(Guid id, Tarefa tarefa)
         {
