@@ -37,3 +37,4 @@ C:\Projetos\TarefasBackEnd\obj\Debug\netcoreapp3.1\staticwebassets\TarefasBackEn
 C:\Projetos\TarefasBackEnd\obj\Debug\netcoreapp3.1\TarefasBackEnd.dll
 C:\Projetos\TarefasBackEnd\obj\Debug\netcoreapp3.1\TarefasBackEnd.pdb
 C:\Projetos\TarefasBackEnd\obj\Debug\netcoreapp3.1\TarefasBackEnd.genruntimeconfig.cache
+C:\Projetos\TarefasBackEnd\bin\Debug\netcoreapp3.1\Insomnia_2021-07-09.json
