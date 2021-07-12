@@ -1,14 +1,9 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace TarefasBackEnd.Models
+namespace TarefasBackEnd.Models.ViewModels
 {
-    public class Usuario{
-        public Guid Id { get; set; }
-
-        [Required]
-        public string Nome { get; set; }
-
+    public class UsuarioLogin
+    {
         [Required]
         public string Email { get; set; }
 
